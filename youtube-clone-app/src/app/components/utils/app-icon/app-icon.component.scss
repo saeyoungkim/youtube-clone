@@ -1,0 +1,61 @@
+.ytc-app-icon {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &::after {
+    position: absolute;
+    top: calc(var(--header-bar-height) + 4px);
+
+    display: inline-block;
+
+    $tool-tip-height: 25px;
+
+    height: $tool-tip-height;
+    line-height: $tool-tip-height - 2px;
+
+    padding: 5px 9px;
+
+    visibility: hidden;
+    opacity: 0;
+
+    transition: opacity 0.3s;
+
+    background-color: rgba(130, 130, 130);
+    border-radius: 3px;
+
+    color: white;
+    font-size: 13px;
+    font-weight: lighter;
+    letter-spacing: -1px;
+
+    content: attr(tooltipMessage);
+  }
+
+  &:hover::after {
+    visibility: visible;
+    text-transform: none;
+    opacity: 1;
+  }
+
+  > a {
+    position: relative;
+    top: calc(var(--header-bar-height) - 40px);
+
+    text-decoration: none;
+    color: white;
+    border-radius: 50%;
+    transition: all 1s;
+
+    width: 40px;
+
+    text-align: center;
+    line-height: 40px;
+
+    &:active {
+      background-color: rgba(130, 130, 130);
+    }
+  }
+}

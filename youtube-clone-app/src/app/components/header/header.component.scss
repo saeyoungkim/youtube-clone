@@ -1,0 +1,40 @@
+.header {
+  > .menu-bar {
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+    height: var(--header-bar-height);
+
+    position: fixed;
+    top: 0px;
+    left: 0px;
+
+    background: var(--hedaer-color);
+
+    > .links-for-ytc-user {
+      height: var(--header-bar-height);
+
+      > .icon-links {
+        margin: 0px;
+        padding: 0px;
+        list-style-type: none;
+
+        > [class*='-icon'] {
+          display: inline-block;
+
+          margin-left: 3px;
+          margin-right: 3px;
+
+          &:first-child {
+            margin-left: 0px;
+          }
+
+          &:last-child {
+            margin-right: 0px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+<div class="header">
+  <div class="menu-bar">
+    <div class="links-on-ytc-app">
+      <ul class="links">
+        <li class="side-bigger-or-smaller"></li>
+        <li class="self-link"></li>
+      </ul>
+    </div>
+    <div class="search-bar">
+      <!-- <search-bar [attr.canSearchWithVoices]=true></search-bar> -->
+    </div>
+    <div class="links-for-ytc-user">
+      <ul class="icon-links">
+        <li class="make-video-icon">
+          <ytc-app-icon [iconCategory]="this.iconCategory.videoCall"></ytc-app-icon>
+        </li>
+        <li class="select-other-ytc-app-icon">
+          <ytc-app-icon [iconCategory]="this.iconCategory.apps"></ytc-app-icon>
+        </li>
+        <li class="notifications-icon">
+          <ytc-app-icon [iconCategory]="this.iconCategory.notifications"></ytc-app-icon>
+        </li>
+        <li class="notifications-icon">
+          <ytc-app-icon [iconCategory]="this.iconCategory.account"></ytc-app-icon>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
